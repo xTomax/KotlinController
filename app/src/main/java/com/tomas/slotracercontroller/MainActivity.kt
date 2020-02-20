@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity()  {
             })
 
         //Initiate execution, load libs and imports to console...
-        executeCMD("import time\n\rfrom machine import Pin, PWM\n\rPin2 = machine.Pin(2)\n\rpwmPin = PWM(Pin2)")
+        executeCMD("import time\n\rfrom machine import Pin, PWM\n\rPin12 = machine.Pin(12)\n\rpwmPin = PWM(Pin12)")
         executeCMD("pwmPin.freq($freq)\n\r")//Set frequency shall not be changed so static parameter. The speed is controlled by duty.
     }
 
